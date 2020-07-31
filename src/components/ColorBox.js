@@ -1,17 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 
 const ColorBox = () => {
-    const color = useSelector((state) => {
-        return(state.focus_color);
+    const currentGradient = useSelector((state) => {
+        return(state.currentGradient);
     })
 
-    useEffect(() => {
-        console.log(color);
-    })
+    const style = {background:currentGradient};
 
     return(
-        <div className = 'color-box'>
+        <div className = 'color-box' style={style} >
 
         </div>
     )

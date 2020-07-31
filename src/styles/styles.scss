@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
-@import './base/base';
 @import './settings/settings';
+@import './base/base';
 @import './components/Header.scss';
 @import './components//ColorBox.scss';
+@import './components/Mixer.scss';
+@import './components/Color.scss';
+@import './components/Thumbnail.scss';
+@import './components/RGB.scss';
+@import './components/Picker.scss';
