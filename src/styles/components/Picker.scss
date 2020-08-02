@@ -1,8 +1,76 @@
 .picker{
-    max-width: 1100px;
-    margin:auto;
-    border:1px solid $border-grey;
-    border-radius: 3px;
+    display: flex;
+    width: 90%;
+    margin: auto;
     background-color: #ffffff;
+    justify-content: center;
+}
+
+.slider{
+    display: block;
+    width: 255px;
+    -webkit-appearance: none;  
+    appearance: none;
+    background: #d3d3d3; 
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1; 
+  }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    cursor: pointer; 
+}
+
+.green{
     margin-top: $small-mar;
+}
+
+.blue{
+    margin-top: $small-mar;
+}
+
+.percent{
+    width: 100px;
+}
+
+.red::-webkit-slider-thumb{
+    background-color: red;
+}
+
+.green::-webkit-slider-thumb{
+    background-color: green;
+}
+
+.blue::-webkit-slider-thumb{
+    background-color: blue;
+}
+
+.percent::-webkit-slider-thumb{
+    background-color: grey;
+}
+
+.picker-text{
+    text-align: center;
+}
+
+.picker-rgb{
+    padding:$small-pad;
+    border-right: 1px solid $border-grey;
+}
+
+.picker-misc{
+    padding:$small-pad;
+}
+
+.picker-misc-alpha{
+    width: 50%;
 }
