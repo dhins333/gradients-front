@@ -1,9 +1,8 @@
 import React from 'react';
 
 const Thumbnail = (props) => {
-
     const style = {
-        background:props.rgba
+        background:`rgba(${props.rgba[0]},${props.rgba[1]},${props.rgba[2]},${props.rgba[3]})`
     }
     
     return(

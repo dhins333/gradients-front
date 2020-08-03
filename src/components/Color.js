@@ -12,6 +12,10 @@ const Color = (props) => {
         setExpandState(!expandState);
     } 
 
+    const colorValue = props.colorValue;
+    const pos = props.pos;
+    const percent = props.percent;
+
     return(
         <>
         <div className='color'>
@@ -20,9 +24,9 @@ const Color = (props) => {
             <i className='expand fas fa-caret-square-down' onClick = {onExpandClick}></i>
         </div>
         {expandState === true ?<Spring
-            from={{ transform: 'translate3d(0,-10px,0)',opacity:'0' }}
-            to={{ transform: 'translate3d(0,0px,0)',opacity:'1' }}>
-            {props => <div style={props}><Picker rgba = {props.colorValue} /></div>}
+            from={{ opacity:'0' }}
+            to={{ opacity:'1' }}>
+            {props => <div style={props}><Picker colorValue = {colorValue} pos = {pos} percent = {percent}/></div>}
         </Spring> : undefined}
         </>
     )

@@ -5,14 +5,14 @@ import { useSelector } from 'react-redux';
 
 const Mixer = () => {
 
-    const colorData = useSelector((state) => {
-        return({color1:state.color1,color2:state.color2});
+    const {color1,color2,percent1,percent2} = useSelector((state) => {
+        return({color1:state.color1,color2:state.color2,percent1:state.percent1,percent2:state.percent2});
     })
 
     return(
         <div className = 'mixer'>
-            <Color colorValue = {colorData.color1} pos = {1} />
-            <Color colorValue = {colorData.color2} pos = {2} />
+            <Color colorValue = {color1} pos = {1} percent = {percent1}  />
+            <Color colorValue = {color2} pos = {2} percent = {percent2}/>
         </div>
     )
 }
