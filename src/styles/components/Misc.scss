@@ -1,0 +1,67 @@
+.misc{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: $medium-mar;
+    padding:$small-pad;
+    border: 1px solid $border-grey;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.typebuttons{
+    display: flex;
+    font-size: $small-font;
+    background-color: $background-grey;
+    border-radius: 5px;
+}
+
+.typebuttons-linear,.typebuttons-radial{
+    padding: $xsmall-pad;
+    border-radius: 5px;
+}
+
+.typebuttons-linear:hover,.typebuttons-radial:hover{
+    cursor: pointer;
+}
+
+.active{
+    background-color: $active;
+    color:white;
+}
+
+.active:hover{
+    opacity: 0.8;
+}
+
+
+.degree-slider{
+    display: block;
+    width: 360px;
+    -webkit-appearance: none;  
+    appearance: none;
+    background: #d3d3d3; 
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+}
+
+.degree-slider:hover {
+    opacity: 1; 
+  }
+
+.degree-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    cursor: pointer; 
+    background-color: $active;
+}
+
+.disabled::-webkit-slider-thumb{
+    background: $background-grey;   
+}

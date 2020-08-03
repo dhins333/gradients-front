@@ -1,0 +1,18 @@
+.css{
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    margin-top: $medium-mar;
+    padding:$small-pad;
+    font-size: $medium-font;
+    cursor: pointer;
+    color:white;
+    border-radius: 5px;
+    background: -webkit-linear-gradient( 92deg, #95d7e3, #eb76ff );
+    background-size:600vw 600vw;
+    animation: textAnimate 5s linear infinite alternate;
+}
+
+.css:hover{
+    opacity: 0.8;
+}

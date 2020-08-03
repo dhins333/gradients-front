@@ -22,6 +22,15 @@ const mainReducer = (state,action) => {
             return {...state,color1:[state.color1[0],state.color1[1],state.color1[2],action.alpha]}
         case 'alpha_change2':
             return {...state,color2:[state.color2[0],state.color2[1],state.color2[2],action.alpha]}
+        case 'change_type':
+            if (state.type === 'linear'){
+                return {...state,type:'radial'};
+            }
+            else{
+                return {...state,type:'linear'};
+            }
+        case 'change_deg':
+            return {...state,deg:action.deg}
         default:
             return state;
         
