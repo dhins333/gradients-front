@@ -31,6 +31,8 @@ const mainReducer = (state,action) => {
             }
         case 'change_deg':
             return {...state,deg:action.deg}
+        case 'toggle_modal':
+            return {...state,modal:!state.modal}
         default:
             return state;
         

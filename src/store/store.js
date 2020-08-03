@@ -7,7 +7,8 @@ const store = createStore(mainReducer,{
     percent1:'0',
     percent2:'100',
     type:'linear',
-    deg:0
+    deg:0,
+    modal:false
 });
 
 export default store;
