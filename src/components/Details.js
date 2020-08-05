@@ -19,9 +19,6 @@ const Details = (props) => {
                     <p className='details-arrow details-text'>{'-> '}</p>
                     <p className='details-color2 details-text'>{color2}</p>
                 </div>
-                <div className = 'details-item2'>
-                    <p className = 'details-css' title='Get CSS'>{'</>'}</p>
-                </div>
             </div>
         </div>
     )

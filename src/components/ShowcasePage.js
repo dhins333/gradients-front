@@ -37,7 +37,7 @@ const ShowcasePage = () => {
     
     return(
         <div>
-            {undefined}
+            <div className='loaderContainer'><div className='loader'></div></div>
         </div>
     )
 }
