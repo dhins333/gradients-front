@@ -1,0 +1,21 @@
+.background{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background : green;
+}
+
+.background-prev,.background-next{
+    color:white;
+    margin-bottom: 10vh;
+    padding:$small-pad;
+    font-size: 1.5rem;
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+    user-select: none;
+}
+
+.background-prev:hover,.background-next:hover{
+    opacity: 0.8;
+}

@@ -1,14 +1,16 @@
-import {createStore} from 'redux';
+import {createStore, applyMiddleware} from 'redux';
 import mainReducer from '../reducers/mainReducer';
+import thunk from 'redux-thunk';
 
 const store = createStore(mainReducer,{
-    color1:[0,0,0,1],
-    color2:[179,144,69,1],
+    color1:[253,116,108,1],
+    color2:[255,144,104,1],
     percent1:'0',
     percent2:'100',
     type:'linear',
-    deg:0,
-    modal:false
-});
+    deg:87,
+    modal:false,
+    showcase:[]
+},applyMiddleware(thunk));
 
 export default store;

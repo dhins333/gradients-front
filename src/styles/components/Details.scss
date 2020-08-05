@@ -1,0 +1,26 @@
+.details-container{
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    width: 100%;
+    z-index:1;
+}
+
+.details{
+    display: flex;
+    max-width: 1100px;
+    margin:auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details-item1{
+    flex-grow: 10;
+    text-align: center;
+}
+
+.details-text,.details-css{
+    display: inline;
+    color:white;
+}
+
+

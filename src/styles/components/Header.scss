@@ -2,6 +2,9 @@
     padding:$small-pad;
     max-width: 1100px;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-h2{
@@ -24,3 +27,19 @@
       background-position-x: 600vw;
     }
   }
+
+  .nav-item{
+    text-decoration: none;
+    padding:$xsmall-pad $small-pad; 
+    border-radius: 5px;
+  }
+
+  .nav-item:hover{
+    background-color: $border-grey;
+  }
+
+  .nav-active,.nav-active:hover{
+    background-color: $active;
+    color:white;
+  }
+
