@@ -1,9 +1,3 @@
 .mainpage{
     padding-bottom:$small-pad;
 }
-
-@media (max-width:600px){
-    .mainpage{
-        padding: $small-pad;
-    }
-}

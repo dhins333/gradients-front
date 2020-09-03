@@ -74,3 +74,16 @@
 .picker-misc-alpha{
     width: 50%;
 }
+
+@media(max-width:600px){
+    .picker{
+        display: block;
+    }
+    .picker-misc-alpha{
+        border:none
+    }
+    .picker-rgb{
+        border-right:none;
+        border-bottom: 1px solid $border-grey;
+    }
+}
