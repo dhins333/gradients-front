@@ -65,3 +65,25 @@
 .disabled::-webkit-slider-thumb{
     background: $background-grey;   
 }
+
+@media (max-width:600px){
+    .misc{
+        display: block;
+    }
+    .typebuttons-linear,.typebuttons-radial{
+        padding: $xsmall-pad;
+        flex:1;
+    }
+    .typebuttons-linear{
+        border-radius: 5px 0px 0px 5px;
+    }
+    .typebuttons-radial{
+        border-radius: 0px 5px 5px 0px;
+    }
+    .degree-slider-container{
+        margin-top: $small-mar;
+    }
+    .degree-slider{
+        margin: auto;
+    }
+}

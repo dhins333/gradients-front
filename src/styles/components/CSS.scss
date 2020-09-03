@@ -8,9 +8,7 @@
     cursor: pointer;
     color:white;
     border-radius: 5px;
-    background: -webkit-linear-gradient( 92deg, #95d7e3, #eb76ff );
-    background-size:600vw 600vw;
-    animation: textAnimate 5s linear infinite alternate;
+    background-color: $active;
 }
 
 .css:hover{

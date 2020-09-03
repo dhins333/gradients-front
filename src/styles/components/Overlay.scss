@@ -22,3 +22,9 @@
     text-align: right;
     padding:$small-pad;
 }
+
+@media(max-width:600px){
+    .overlay{
+        padding: $small-pad;
+    }
+}

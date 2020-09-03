@@ -18,3 +18,9 @@ body{
     border-radius: 5px;
     font-size: 1.3rem;
 }
+
+@media (max-width:600px){
+  .CodeMirror-scroll * {
+    white-space: pre-wrap;
+  }
+}
